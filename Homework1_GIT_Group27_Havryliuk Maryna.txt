@@ -1,0 +1,229 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+$ cd /d
+$ cd QA_Course
+$ cd Homework_2
+$ git clone https://github.com/MarynaHavryliuk/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+$ cd JSON
+$ touch new.json
+ 7. Добавить файл под гит.
+$ git add new.json
+ 8. Закоммитить файл.
+$ git commit -m "new train file"
+ 9. Отправить файл на внешний GitHub репозиторий.
+$ git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+$ vim new.json -> I
+{
+        "name":"Maryna Havryliuk",
+        "age":23,
+        "number of pets":0,
+        "salary request":500$
+}
+esc->:wq
+ 11. Отправить изменения на внешний 
+$ git commit -am "add information"
+$ git push
+ 12. Создать файл preferences.json
+$ vim preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+{
+        "favourite film":"Inception",
+        "favourite serial":"The morning show",
+        "favourite dish":"all potato dishes",
+        "favourite season":"spring",
+        "wished country to visit":"Georgia"
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+$ vim skills.json
+{
+        "skill_1":"Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC",
+        "skill_2":"Что такое клиент-серверная архитектура",
+        "skill_3":"HTTP Методы запросов на сервер",
+        "skill_4":"Коды ответов HTTP сервера",
+        "skill_5":"Структуры HTTP запросов и ответов",
+        "skill_6":"Что такое JSON, XML. Их структура",
+        "skill_7":"Тестирование API через Postman (JS, автотесты API)",
+        "skill_8":"Снятие и чтение логов c внешнего сервера",
+        "skill_9":"Снифинг http web трафика через Charles и Fiddler",
+        "skill_10":"Dev Tools веб браузеров (Google Chrome, FireFox)"
+}
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+$ git add .
+$ git commit -m "information about me"
+$ git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+MarynaHavryliuk/JSON -> Add file -> Create new file -> bug_report.json 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+bug_report.json 
+{
+ "Bug ID":123,
+ "Severity":"Major",
+ "Priority":"High",
+ "Summary": "The information isn't translated on the site after pushing the button "ukr" in the header",
+ "Bug description":"The information isn't translated on the site after pushing the button "ukr" in the header",
+ "Steps to reproduse": 
+               {
+                 "1. Open the site: http..",
+                 "2. Push the button "ukr" in the header",
+                 "3. Pay attention to the information language"
+               }
+ "Actual result": "The information is submitted in English on the site after pushing the button "ukr" in the header",
+ "Expected result":"The information is submitted in Ukrainian on the site after pushing the button "ukr" in the header"
+} 
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+$ git pull
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+$ cd /d
+$ cd QA_Course/Homework_2
+$ git clone https://github.com/MarynaHavryliuk/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+$ cd XML
+$ touch new.xml
+ 24. Добавить файл под гит.
+$ git add new.xml
+ 25. Закоммитить файл.
+$ git commit -m "new xml file"
+ 26. Отправить файл на внешний GitHub репозиторий.
+$ git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+$ vim new.xml -> I
+<new>
+  <name>Maryna Havryliuk</name>
+  <age>23</age>
+  <number of pets>0</number of pets>
+  <salary request>500$</salary request>
+</new>
+esc->:wq
+ 28. Отправить изменения на внешний репозиторий.
+$ git commit -am "adding information"
+$ git push
+ 29. Создать файл preferences.xml
+$ vim preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+<preferences>
+   <favourite film>Inception</favourite film>
+   <favourite serial>The morning show</favourite serial>
+   <favourite dish>all potato dishes</favourite dish>
+   <favourite season>spring</favourite season>
+   <wished country to visit>Georgia</wished country to visit>
+</preferences>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+$ vim skills.xml
+<skills>
+   <skill_1>Базовая_теория_(Что_такое_тестирование_багрепорты_документация_виды_методы_направления_тестирования)_SDLC_STLC</skill_1>
+   <skill_2>Что_такое_клиент-серверная_архитектура</skill_2>
+   <skill_3>HTTP_Методы_запросов_на_сервер</skill_3>
+   <skill_4>Коды_ответов_HTTP_сервера</skill_4>
+   <skill_5>Структуры_HTTP_запросов_и_ответов</skill_5>
+   <skill_6>Что_такое_JSON_XML_Их_структура</skill_6>
+   <skill_7>Тестирование_API_через_Postman_(JS_автотесты API)</skill_7>
+   <skill_8>Снятие_и_чтение_логов_c_внешнего_сервера</skill_8>
+   <skill_9>Снифинг_http_web_трафика_через_Charles_и_Fiddler</skill_9>
+   <skill_10>Dev_Tools_веб_браузеров_(Google_Chrome_FireFox)</skill_10>
+</skills>
+ 32. Сделать коммит в одну строку.
+$ git add . && git commit -m "information about me"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+MarynaHavryliuk/XML -> Add file -> Create new file -> bug_report.xml 
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+bug_report.xml 
+<bug_report>
+  <Bug ID>123</Bug ID>
+  <Severity>Major</Severity>
+  <Priority>High</Priority>
+  <Summary>The information isn't translated on the site after pushing the button "ukr" in the header</Summary>
+  <Bug description>The information isn't translated on the site after pushing the button "ukr" in the header</Bug description>
+     <Steps to reproduse>
+                 <1>Open the site: http..</1>
+                 <2>Push the button "ukr" in the header</2>
+                 <3>Pay attention to the information</3>
+     </Steps to reproduse>
+ <Actual result>The information is submitted in English on the site after pushing the button "ukr" in the header</Actual result>
+ <Expected result>The information is submitted in Ukrainian on the site after pushing the button "ukr" in the header</Expected result>
+</bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+$ git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+$ cd ..
+$ git clone https://github.com/MarynaHavryliuk/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+$ cd TXT
+$ touch new.txt
+ 4. Добавить файл под гит.
+$ git add new.txt
+ 5. Закоммитить файл.
+$ git commit -m "New file TXT"
+ 6. Отправить файл на внешний GitHub репозиторий.
+$ git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+$ vim new.txt
+  name: Maryna Havryliuk
+  age: 23
+  number of pets: 0
+  salary request: 500$ 
+ 8. Отправить изменения на внешний репозиторий.
+$ git commit -am "Adding information"
+$ git push
+ 9. Создать файл preferences.txt
+$ vim preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+        favourite film: Inception
+        favourite serial: The morning show
+        favourite dish: all potato dishes
+        favourite season: spring
+        wished country to visit: Georgia
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+$ vim skills.txt
+        1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC
+        2. Что такое клиент-серверная архитектура
+        3. HTTP Методы запросов на сервер
+        4. Коды ответов HTTP сервера
+        5. Структуры HTTP запросов и ответов
+        6. Что такое JSON, XML. Их структура
+        7. Тестирование API через Postman (JS, автотесты)
+        8. Снятие и чтение логов c внешнего сервера
+        9. Снифинг http web трафика через Charles и Fiddler
+        10. Dev Tools веб браузеров (Google Chrome, FireFox)
+ 12. Сделать коммит в одну строку.
+$ git add . && git commit -m "information about me"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+MarynaHavryliuk/TXT -> Add file -> Create new file -> bug_report.txt 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ Bug ID:123.
+ Severity: Major.
+ Priority: High.
+ Summary: The information isn't translated on the site after pushing the button "ukr" in the header.
+ Bug description: The information isn't translated on the site after pushing the button "ukr" in the header.
+ Steps to reproduse: 
+                 1. Open the site: http.. .
+                 2. Push the button "ukr" in the header.
+                 3. Pay attention to the information language.
+ Actual result: The information is submitted in English on the site after pushing the button "ukr" in the header.
+ Expected result: The information is submitted in Ukrainian on the site after pushing the button "ukr" in the header.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+$ git pull
