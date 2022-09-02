@@ -1,0 +1,78 @@
+Первое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я 
+$ pwd 
+2) Создать папку 
+$ mkdir homework1 
+3) Зайти в папку 
+$ cd homework1
+4) Создать 3 папки 
+$ mkdir test{1..3}
+5) Зайти в любоую папку 
+$ cd test2
+6) Создать 5 файлов (3 txt, 2 json) 
+$ touch text1.txt text2.txt text3.txt 
+7) Создать 3 папки 
+$ mkdir task{1..3}
+8) Вывести список содержимого папки 
+$ ls 
+9) + Открыть любой txt файл 
+$ vim text1.txt ->клавиша І ( insert)
+10) + написать туда что-нибудь, любой 
+"First",
+"Second",
+"Third",
+"Forth"
+
+11) + сохранить и выйти. 
+ esc-> :wq 
+12) Выйти из папки на уровень выше 
+$ cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку:
+$ cd test2
+$ mv {text2.txt,text3.txt} task1
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку:
+$ cp {j_1.json,j_2.json} task2
+15) Найти файл по имени:
+$ find . -name text1*
+./AppData/Roaming/Microsoft/Windows/Recent/text1.lnk
+./homework1/test2/text1.txt
+./homework11/test2/text1.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает: 
+$ tail -f text1.txt
+17) вывести несколько первых строк из текстового файла:
+$ head -2 text1.txt
+18) вывести несколько последних строк из текстового файла:
+$ tail -2 text1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает: 
+$ less text1.txt -> q (для выхода)
+20) вывести дату и время 
+$ date 
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+ $ curl "http://162.55.220.72:5005/terminal-hw-request"
+ $ curl "http://162.55.220.72:5005/get_method?name=Maryna&age=23"
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    16  100    16    0     0     14      0  0:00:01  0:00:01 --:--:--    15["Maryna","23"]
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 
+script.txt:
+#!/bin/bash
+cd homework11
+mkdir test{1..3}
+cd test2
+touch text1.txt text2.txt text3.txt
+mkdir task{1..3}
+ls
+mv {text2.txt,text3.txt} task1
+
+bash:
+$ chmod +x script.txt
+$ ./script.txt
